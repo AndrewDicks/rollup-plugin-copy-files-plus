@@ -2,7 +2,7 @@
   "name": "@andrewdicks/rollup-plugin-copy-files-plus",
   "author": "Andrew B. Dicks",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Rollup plugin to copy all files/folders matching a glob.  Supports flattening, text replacement and renaming during packaging.",
   "source": "src/index.ts",
   "exports": {

@@ -14,10 +14,13 @@ module.exports = {
         project: [
             'tsconfig.eslint.json',
             './tsconfig.json',
+            './package.json',
+            './.eslintrc.cjs',
         ]
     },
     rules: {
         semi: 'error',
+        quotes: ['error', 'single'],
         '@typescript-eslint/no-inferrable-types': 'off'
     }
 };
