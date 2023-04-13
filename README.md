@@ -1,5 +1,5 @@
 
-# @andrewdicks/rollup-plugin-copy-files
+# @andrewdicks/rollup-plugin-copy-files-plus
 
 Copy files and folders (and optionally transform and rename them) during rollup bundling.
 
@@ -44,6 +44,7 @@ export default {
 
 # Goals
 * ✅ Strongly-typed source code and published declarations
+* ✅ Easy-to-diagnose verbose output
 * ️✴️ Safeguards around escaping the rollup destination
 * ✅ Able to copy from parent folders using relative paths without escaping the rollup destination
 * To support:

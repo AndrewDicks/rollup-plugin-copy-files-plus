@@ -200,7 +200,38 @@ describe('Glob Copy Tests', function () {
             ]
         });
 
-        expect(logSpy).toHaveBeenCalledTimes(3);
+        expect(logSpy).toHaveBeenCalledTimes(9);
+
+        logSpy.mockReset();
+    });
+
+    test('Test flattening - dryRun & verbose mode enabled', async () => {
+        const logSpy = jest.spyOn(console, 'log').mockImplementation(() => {
+            return;
+        });
+
+        await build({
+            dryRun: true,
+            verbose: true,
+            targets: [
+                {
+                    basePath: '../flatten',
+                    matchGlobs: ['**/*.html'],
+                    ignoreGlobs: ['**/*.txt'],
+                    dest: 'dist',
+                    flatten: true
+                },
+                {
+                    basePath: '../flatten',
+                    matchGlobs: ['**/*.txt'],
+                    ignoreGlobs: ['**/*.html'],
+                    dest: 'dist',
+                    flatten: false
+                }
+            ]
+        });
+
+        expect(logSpy).toHaveBeenCalledTimes(16);
 
         logSpy.mockReset();
     });
