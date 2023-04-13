@@ -2,8 +2,7 @@
   "name": "@andrewdicks/rollup-plugin-copy-files-plus",
   "author": "Andrew B. Dicks",
   "license": "MIT",
-  "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rollup plugin to copy all files/folders matching a glob.  Supports flattening, text replacement and renaming during packaging.",
   "source": "src/index.ts",
   "exports": {
@@ -24,6 +23,7 @@
   },
   "keywords": [
     "copy",
+    "copyPlus",
     "glob",
     "rollup",
     "rollup-plugin"
@@ -35,7 +35,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/AndrewDicks/rollup-plugin-copy-files-plus.git"
+    "url": "git+https://github.com/AndrewDicks/rollup-plugin-copy-files-plus.git"
   },
   "dependencies": {
     "chalk": "^5.2.0",
@@ -63,5 +63,12 @@
     "tslib": "^2.5.0",
     "typedoc": "^0.24.1",
     "typescript": "^5.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/AndrewDicks/rollup-plugin-copy-files-plus/issues"
+  },
+  "homepage": "https://github.com/AndrewDicks/rollup-plugin-copy-files-plus#readme",
+  "directories": {
+    "test": "tests"
   }
 }
